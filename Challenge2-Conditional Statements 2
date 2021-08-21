@@ -1,0 +1,35 @@
+#include <stdio.h>
+ int main()
+ {
+    int ch;
+    printf("Given are the food items.\n");
+printf("Enter any number between 1-5 to see their prices.\n");
+    printf("Enter 1 for Pizza.\n");
+    printf("Enter 2 for Pasta.\n");
+    printf("Enter 3 for Sandwich.\n");
+    printf("Enter 4 for Burger.\n");
+    printf("Enter 5 for French Fries.\n");
+    scanf("%d",&ch);
+ switch(ch)
+ {
+    default:
+        printf("Invalid choice");
+        break;
+ case 1:
+    printf("Food item is Pizza.\n Price is Rs 239");
+        break;
+  case 2:
+printf("Food item is Pasta.\n Price is Rs179");     
+  break;
+    case 3:
+        printf("Food item is Sandwich.\n Price is Rs 149");
+        break;
+    case 4:
+        printf("Food item is Burger.\n Price is Rs 129");
+        break;
+case 5:
+printf("Food item is French Fries.\n Price is Rs 99");     
+  break;
+    }
+    return 0;
+  }
