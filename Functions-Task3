@@ -1,0 +1,27 @@
+#include<stdio.h>
+int lcm(int n1,int n2);
+int main()
+{
+int n1,n2,LCM;
+printf("Input\n Input first number:");
+scanf("%d",&n1);
+printf(" Input second number:");
+scanf("%d",&n2);
+LCM=lcm(n1,n2);
+printf("Output\n LCM of %d and %d is %d\n",n1,n2,LCM);
+return 0;
+}
+int lcm(int n1,int n2)
+{ 
+static int commonmult = 1;
+if(commonmult % n1 == 0 && commonmult % n2 == 0)
+{
+return commonmult;
+}
+else
+{
+commonmult++;
+lcm(n1, n2);
+return commonmult;
+}
+}
